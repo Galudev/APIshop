@@ -9,5 +9,5 @@ interface ICustomerController {
     fun getById(@PathVariable("id") idCustomer: Long): ResponseEntity<Customer>
     fun getAll(): ResponseEntity<List<Customer>>
     fun update(@RequestBody customer: Customer): ResponseEntity<Customer>
-    fun delete(@PathVariable("id") idCustomer: Long): ResponseEntity<Any>
+    fun delete(@PathVariable("id") idCustomer: Long): ResponseEntity<Unit>
 }
