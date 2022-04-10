@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api/shop/customers")
-class CustomerController(var customerService: CustomerService, var customerRepository: ICustomerRepository) :
-    ICustomerController {
+class CustomerController(var customerService: ICustomerService) : ICustomerController {
 
     @PostMapping("")
     override fun create(@RequestBody customer: Customer): ResponseEntity<Customer> {
