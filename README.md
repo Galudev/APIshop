@@ -42,6 +42,6 @@ Another problem that I found it is build a image with Docker, an error that I ca
 
 I used an API in a previous project in Android using Retrofit, but this is my first experience build an API and working with SpringBoot and IntelliJ IDEA, as well as applicating a SOLID principles in a project.
 
-I have used differents interfaces for different parts in the project. An for the Service, used to save, get and delete the data of the repository, and other for the Controller, that provide the cominucation with the HTTP request used by the final user of the API and the web. Besides, the communication between both classes is carried out through the interfaces.
+I have used differents interfaces for different parts in the project. An for the Service, used to save, get and delete the data of the repository, and other for the Controller, that provide the cominucation with the HTTP request used by the final user of the API and the web with the application. Besides, the communication between both classes is carried out through the interfaces.
 
 Other experience new for me is the Unit Test. In this project, I have done test for a few capabilities, but I could not do it for update and delete, despite of I tried with different codes and comprovations.
