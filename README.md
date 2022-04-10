@@ -32,7 +32,7 @@ For use the API, you need charge the url "http://localhost:8080/api/shop/custome
 
 * Delete an existing customer: Use DELETE and add at the last of url the id for customer that you want delete (for example "http://localhost:8080/api/shop/customers/1".
 
-## My problems while I make the project
+## My problems while doing the project
 
 At the first moment, when I had a basic API, I tried to run it, but a problen with Java appeared, I tried to solve this error installing new versions of java, changing the java version in all the project in IntelliJ IDEA... but nothing of this solved the problem. Finally, I downloaded a new SpringBoot project and replicated the first steps, at the same way, and when I runed it, there was no problem with Java this time. Is for this that a needed to create a new repository on Saturday 9th of april, but in the new repository I replicate the same steps than in the previous repository.
 
