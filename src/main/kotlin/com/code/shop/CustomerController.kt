@@ -48,7 +48,7 @@ class CustomerController(var customerService: CustomerService, var customerRepos
 
     @DeleteMapping("/{id}")
     override fun delete(@PathVariable("id") idCustomer: Long): ResponseEntity<Unit> {
-        val responseEntity = if (customerRepository.findById(idCustomer).isPresent) {
+        val responseEntity = if (customerService.getById(idCustomer) != null) {
             ResponseEntity(customerService.delete(idCustomer), HttpStatus.OK)
         } else {
             ResponseEntity(HttpStatus.NOT_FOUND)
