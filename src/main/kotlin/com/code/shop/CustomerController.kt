@@ -16,7 +16,7 @@ class CustomerController(var customerService: CustomerService, var customerRepos
 
     @GetMapping("/{id}")
     override fun getById(@PathVariable("id") idCustomer: Long): ResponseEntity<Customer> {
-        val responseEntity = if (customerRepository.findById(idCustomer).isPresent) {
+        val responseEntity = if (customerService.getById(idCustomer) == null) {
             ResponseEntity(customerService.getById(idCustomer), HttpStatus.OK)
         } else {
             ResponseEntity(HttpStatus.NOT_FOUND)

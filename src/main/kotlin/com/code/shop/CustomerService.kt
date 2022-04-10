@@ -10,8 +10,8 @@ class CustomerService (var customerRepository: ICustomerRepository) : ICustomerS
         return customerRepository.findAll()
     }
 
-    override fun getById(idCustomer: Long): Customer {
-        return customerRepository.findByIdOrNull(idCustomer)!!
+    override fun getById(idCustomer: Long): Customer? {
+        return customerRepository.findByIdOrNull(idCustomer)
     }
 
     override fun save(customer: Customer): Customer {
