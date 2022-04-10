@@ -4,7 +4,6 @@ import org.hibernate.Hibernate
 import javax.persistence.*
 
 @Entity
-@Table(name = "customer")
 data class Customer(
     var name: String = "",
     var surname: String = "",
