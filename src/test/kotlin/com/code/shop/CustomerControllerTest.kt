@@ -12,7 +12,7 @@ internal class CustomerControllerTest {
 
     private val customerRepository: ICustomerRepository = mockk()
     private val customerService = CustomerService(customerRepository)
-    private val customerController = CustomerController(customerService, customerRepository)
+    private val customerController = CustomerController(customerService)
 
     //getById()
     @Test
