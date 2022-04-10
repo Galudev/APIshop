@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.code.shop.CustomerControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-10T16:13:26" hostname="DESKTOP-3DKKBDE" time="1.176">
+  <properties/>
+  <testcase name="when the customers list is empty, return the error 'not found'()" classname="com.code.shop.CustomerControllerTest" time="0.998"/>
+  <testcase name="when the customer with this id does not exist, return the error 'not found'()" classname="com.code.shop.CustomerControllerTest" time="0.176"/>
+  <system-out><![CDATA[18:13:25.904 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for ICustomerRepository name=#1
+18:13:27.417 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for List name=child of #1#2
+18:13:27.423 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering [] on ICustomerRepository(#1).findAll()
+18:13:27.474 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for ICustomerRepository name=#3
+18:13:27.641 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Optional name=child of #3#4
+18:13:27.644 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Customer name=child^2 of #3#4#5
+18:13:27.648 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering Optional(child of #3#4) on ICustomerRepository(#3).findById(1)
+18:13:27.648 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering null on Optional(child of #3#4).orElse(null)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.code.shop.CustomerServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-04-10T16:13:27" hostname="DESKTOP-3DKKBDE" time="0.023">
+  <properties/>
+  <testcase name="when get a customer save this customer()" classname="com.code.shop.CustomerServiceTest" time="0.009"/>
+  <testcase name="when get list of customers return list of customers()" classname="com.code.shop.CustomerServiceTest" time="0.007"/>
+  <testcase name="when get a customer return this customer()" classname="com.code.shop.CustomerServiceTest" time="0.006"/>
+  <system-out><![CDATA[18:13:27.658 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for ICustomerRepository name=#6
+18:13:27.663 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Customer name=child of #6#7
+18:13:27.663 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering Customer(id = null , name = Juan , surname = Sanchez , email = juansanchez@gmail.com , birthdate = 05/03/1990 ) on ICustomerRepository(#6).save(Customer(id = null , name = Juan , surname = Sanchez , email = juansanchez@gmail.com , birthdate = 05/03/1990 ))
+18:13:27.669 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for ICustomerRepository name=#8
+18:13:27.670 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for List name=child of #8#9
+18:13:27.671 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering [Customer(id = null , name = Juan , surname = Sanchez , email = juansanchez@gmail.com , birthdate = 05/03/1990 ), Customer(id = null , name = Ana , surname = Garcia , email = anagarcia@gmail.com , birthdate = 01/10/1985 )] on ICustomerRepository(#8).findAll()
+18:13:27.676 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for ICustomerRepository name=#10
+18:13:27.678 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Optional name=child of #10#11
+18:13:27.679 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Customer name=child^2 of #10#11#12
+18:13:27.680 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering Optional(child of #10#11) on ICustomerRepository(#10).findById(1)
+18:13:27.680 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering Customer(id = null , name = Juan , surname = Sanchez , email = juansanchez@gmail.com , birthdate = 05/03/1990 ) on Optional(child of #10#11).orElse(null)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
