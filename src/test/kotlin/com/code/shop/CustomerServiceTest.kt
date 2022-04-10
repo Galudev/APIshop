@@ -54,7 +54,7 @@ internal class CustomerServiceTest {
 
     //save()
     @Test
-    fun `when give a customer save this customer`() {
+    fun `when get a customer save this customer`() {
 
         val customer = Customer("Juan", "Sanchez", "juansanchez@gmail.com", "05/03/1990")
 
