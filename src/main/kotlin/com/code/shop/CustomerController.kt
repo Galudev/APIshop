@@ -38,7 +38,7 @@ class CustomerController(var customerService: CustomerService, var customerRepos
     @PutMapping("")
     override fun update(@RequestBody customer: Customer): ResponseEntity<Customer> {
         if (customer.id == null) return ResponseEntity(HttpStatus.BAD_REQUEST)
-        val responseEntity = if (customerRepository.findById(customer.id!!).isPresent) {
+        val responseEntity = if (customerService.getById(customer.id!!) != null) {
             ResponseEntity(customerService.save(customer), HttpStatus.OK)
         } else {
             ResponseEntity(HttpStatus.NOT_FOUND)
