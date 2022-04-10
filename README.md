@@ -2,7 +2,7 @@
 
 For execute the API you need execute APIShop.jar file, or use Docker for get an image.
 
-For use the API, you need charge the url "http://localhost:8080/api/shop/customers/". The API contains the attributes name, surname, email and birthdate for each customer, and have this capabilities:
+For use the API, you need to use the url "http://localhost:8080/api/shop/customers/". The API contains the attributes name, surname, email and birthdate for each customer, and have the following capabilities:
 
 * Create a new customer: Use POST and one value for each attribute, if you do not send a value for an attribute, this is create how empty value (for example 
 
@@ -15,7 +15,7 @@ For use the API, you need charge the url "http://localhost:8080/api/shop/custome
 
 }).
 
-* Get a single customer: Use GET and add at the last of url the id for customer that you want get (for example "http://localhost:8080/api/shop/customers/1".
+* Get a single customer: Use GET and add at the last of url the id for customer that you want get (for example "http://localhost:8080/api/shop/customers/1").
 * Get all customers: Use GET to get a list of customers.
 * Update a customer: Use PUT and one value for each attribute, included the id of the customer that you want update (for example 
 
@@ -30,7 +30,7 @@ For use the API, you need charge the url "http://localhost:8080/api/shop/custome
 }).
 
 
-* Delete an existing customer: Use DELETE and add at the last of url the id for customer that you want delete (for example "http://localhost:8080/api/shop/customers/1".
+* Delete an existing customer: Use DELETE and add at the last of url the id for customer that you want delete (for example "http://localhost:8080/api/shop/customers/1").
 
 ## My problems while doing the project
 
