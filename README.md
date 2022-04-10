@@ -40,7 +40,7 @@ Another problem that I found it is build a image with Docker, an error that I ca
 
 ## My experience
 
-I used an API in a previous project in Android using Retrofit, but this is my first experience build an API and working with SpringBoot and IntelliJ IDEA, as well as applicating a SOLID concepts in a project.
+I used an API in a previous project in Android using Retrofit, but this is my first experience build an API and working with SpringBoot and IntelliJ IDEA, as well as applicating a SOLID principles in a project.
 
 I have used differents interfaces for different parts in the project. An for the Service, used to save, get and delete the data of the repository, and other for the Controller, that provide the cominucation with the HTTP request used by the final user of the API and the web. Besides, the communication between both classes is carried out through the interfaces.
 
